@@ -1,0 +1,61 @@
+<section>
+    <div class="container-text">
+        <h1>Best Fitness
+        Center For You</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consectetur beatae totam id ea, tempora labore minus ad exercitationem iste rerum accusamus nisi. Quis, illum.</p>
+        <a href="#">Get Started</a>
+    </div>
+    <div class="container-img">
+        <img src="img/showcase.png" alt="imagen-gym">
+    </div>
+</section>
+
+<style>
+    section{
+        background-image: /*linear-gradient(
+                            0deg,
+                            rgba(0, 0, 0, 0.5),
+                            rgba(0, 0, 0, 0.5)
+                            )
+                            ,*/ url("/img/background.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px; 
+        gap: 30px;
+        overflow: hidden;
+    }
+
+    .container-text{
+        margin-top: 100px;
+    }
+
+    section h1{
+        font-size: var(--titles);
+    }
+
+    section p{
+        font-size:var(--sub-titles);
+        margin-bottom: 20px; 
+    }
+
+    section a{
+        text-decoration: none;
+        font-size: var(--text);
+        color: white;
+        background-color: var(--color-principal);
+        padding: 10px 25px;
+        border-radius: 10px;
+    }
+
+
+    .container-img img{
+        width: 365px;
+    }
+</style>
