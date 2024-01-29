@@ -1,0 +1,27 @@
+.imagen-clase{
+    max-width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+.container-card{
+    border-radius: 20px;
+    background-color: white;
+}
+
+.container-card--text{
+    padding: 30px;
+}
+
+.container-card--text---title{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-card--text---p p{
+    font-size: 1.3rem;
+    opacity: .8;
+}
