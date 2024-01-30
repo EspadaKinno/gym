@@ -1,17 +1,22 @@
 <section>
-    <div class="container-text">
-        <h1>Best Fitness
-        Center For You</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consectetur beatae totam id ea, tempora labore minus ad exercitationem iste rerum accusamus nisi. Quis, illum.</p>
-        <a href="#">Get Started</a>
-    </div>
-    <div class="container-img">
-        <img src="img/showcase.png" alt="imagen-gym">
+    <div class="ancho">
+        <div class="container-text">
+            <h1>Best Fitness
+            Center For You</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consectetur beatae totam id ea, tempora labore minus ad exercitationem iste rerum accusamus nisi. Quis, illum.</p>
+            <a href="#">Get Started</a>
+        </div>
+        <div class="container-img">
+            <img src="img/showcase.png" alt="imagen-gym">
+        </div>
     </div>
 </section>
 
 <style>
-    
+    .ancho{
+        max-width: 1024px;
+        
+    }
     section{
         background-image: /*linear-gradient(
                             0deg,
@@ -31,6 +36,8 @@
         padding: 40px; 
         gap: 30px;
         overflow: hidden;
+        width: 100%;
+        
     
     }
 
@@ -59,5 +66,44 @@
 
     .container-img img{
         width: 365px;
+    }
+
+
+    @media only screen and (min-width: 768px){
+        
+        .ancho{
+            display: flex;
+            align-items: center;
+        }
+        section{
+        
+        height: 100vh;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 40px; 
+        gap: 30px;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .container-text h1{
+        font-size: 3.8rem;
+    }
+    .container-img{
+       display: flex;
+       flex-direction: row;
+       align-items: flex-start;
+    }
+    
+    }
+
+    @media only screen and (min-width: 1024px){
+        .container-img img{
+            width: 600px;
+    }
+
     }
 </style>
